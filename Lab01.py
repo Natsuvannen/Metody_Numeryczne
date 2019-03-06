@@ -1,4 +1,7 @@
 from numpy import *
+from numpy.random import *
+from matplotlib.pyplot import *
+
 #zadanie 1
 
 #x=linspace(56, 100, 45)
@@ -28,3 +31,13 @@ from numpy import *
 
 #zadanie 4
 
+x04 = int(input())
+x_values = zeros(x04+1)
+y_values = zeros(x04+1)
+
+for i in range(x04+1):
+    x_values[i] = i
+    y_values[i] = tan(x_values[i]**3-x_values[i]*42)
+
+plot(x_values, y_values)
+show()
